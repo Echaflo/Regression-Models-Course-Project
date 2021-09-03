@@ -44,7 +44,7 @@ mtcars$am   <- factor(mtcars$am,labels=c("Automatic","Manual"))
 
 
 ##  Regression Analysis
-#### We’ve visually seen that automatic is better for MPG, but we will now quantify his difference. From appendix fig. 3
+#### We’ve visually seen that automatic is better for MPG, but we will now quantify his difference. From appendix fig. 2
 
 ```{r}
 aggregate(mpg~am, data = mtcars, mean)
