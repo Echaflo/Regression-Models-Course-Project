@@ -1,7 +1,7 @@
 ---
 title: "Regression Models Course Project"
 author: "echf"
-date: "Sep-2021"
+date: "3/9/2021"
 output:
   pdf_document: default
   html_document:
@@ -86,14 +86,10 @@ summary(fit_simple)
 ```{r}
 
 init <- lm(mpg ~ am, data = mtcars)
-###summary(init)
 betterFit <- lm(mpg~am + cyl + disp + hp + wt, data = mtcars)
-####betterFit <-  lm(mpg ~ am + wt + qsec, data = mtcars) 
 anova(init, betterFit)
 ```
 #### This results in a p-value of 8.637e-08, and we can claim the betterFit model is significantly better than our init simple model. We double-check the residuals for non-normality  and can see they are all normally distributed and homoskedastic.
-
-
 
 
 
